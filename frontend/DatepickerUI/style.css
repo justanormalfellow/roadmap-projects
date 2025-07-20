@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.month-container {
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
+}
+
+.day {
+  padding: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.weekdays {
+    margin-top: 2em;
+    font-family: cursive;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.calendar {
+    margin-top: 4em;
+    text-align: center;
+}
+.calendar h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 52px;
+}
+
+.date-selector input {
+    width: 230px; 
+    padding: 5px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+.date-selector button {
+    height: 30px;
+    width: 30px;
+}
