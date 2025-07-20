@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.timeline-container {
+    position: relative; /* Ensure proper layout handling */
+    left: 75%;
+    transform: translateX(-50%); /* Center the timeline without overflow */
+    width: 50%; 
+    border-left: 2px solid rgb(59, 59, 59);
+    padding: 0 0 0 30px;
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+}
+
+.info {
+    padding: 16px 20px;
+    position: relative; /* without relative pos in the main div, our before stops showing up when we set postion to absolute */
+}
+
+.further {
+    padding-bottom: 350px;
+}
+.furthest {
+    padding-top: 300px;
+}
+
+.info::before {
+    position: absolute;
+    left: -37px;
+
+    content: ''; /* only because of this we can make a box without content */
+    display: inline-block; /* this allows it to be displayed */
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+.year {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.name {
+    margin-top: -9px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid black;
+}
